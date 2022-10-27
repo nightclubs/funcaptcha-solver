@@ -5,7 +5,7 @@
 
 ## Installation
 
-download the funcapsolver folder and audios folder, and make a new file with that folder in the same directory. Then input  
+download the funcapsolver folder and audios folder, and make a new file with those folders in the same directory. Then input  
 ```python
 from funcapsolver import *
 ``` 
