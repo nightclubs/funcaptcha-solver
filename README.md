@@ -5,8 +5,11 @@
 
 ## Installation
 
-download the funcapsolver folder, and make a new file with that folder in the same directory. Then do ```python
-from funcapsolver import *``` now you just initiated the solver (read the examples below on how to solve).
+download the funcapsolver folder and audios folder, and make a new file with that folder in the same directory. Then input  
+```python
+from funcapsolver import *
+``` 
+at the top of your brand new file. Congrats now you just initiated the solver (read the examples below on how to solve).
 
 ## Examples (all taken straight from acier's github repo!)
 
