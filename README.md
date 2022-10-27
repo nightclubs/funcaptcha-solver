@@ -23,4 +23,6 @@ token = funcapsolver.get_token(host='api.funcaptcha.com', pkey='69A21A01-CC7B-B9
 token = funcapsolver.get_token('api.funcaptcha.com', '69A21A01-CC7B-B9C6-0F9A-E7FA06677FFC')
 solved = funcapsolver.solveCaptcha(token)
 print(solved)
-```
+``` 
+
+##### If you want to use threading, I suggest you ignore all exceptions due to rate limits and shit.
