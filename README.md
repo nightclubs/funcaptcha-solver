@@ -2,6 +2,11 @@
 ## Credits
 [`AcierP`](https://github.com/acierp) is the original creator, I just fixed the module so that it would actually solve.
 
+
+## Installation
+
+pip install `fuckfuncap`
+
 ## Examples (all taken straight from acier's github repo!)
 
 #### Obtaining an unsolved captcha token
