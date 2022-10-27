@@ -26,7 +26,6 @@ class funcapsolver():
 			getcaptchaAudio = requests.get(f'https://client-api.arkoselabs.com/fc/get_audio/?session_token={session_token}&analytics_tier=40&r=us-east-1&game=1&language=en')
 		else:
 			getcaptchaAudio = requests.get(f'https://client-api.arkoselabs.com/fc/get_audio/?session_token={session_token}&analytics_tier=40&r=us-east-1&game=1&language=en', proxies={"all://": proxy})
-		audiornd = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 7)) 
 		open(rf"{os.getcwd()}\audios\captcha" + '.wav', 'wb+').write(getcaptchaAudio.content)
 
 		attemptSolve = requests.post('https://client-api.arkoselabs.com/fc/audio/', proxies=proxy,
