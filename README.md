@@ -28,5 +28,5 @@ print(solved)
 ##### If you want to use threading, I suggest you ignore all exceptions due to rate limits and shit.
 
 ## Updates
-1. full requests-based python funcaptcha solver using the iamges instead of solver so that its faster. (in development)
+1. full requests-based python funcaptcha solver using the imgs and a AI so that its faster. (in development)
 2. add google speech to text api (this is so much faster + accurate, if you want to add it yourself go ahead)
