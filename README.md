@@ -28,4 +28,5 @@ print(solved)
 ##### If you want to use threading, I suggest you ignore all exceptions due to rate limits and shit.
 
 ## Updates
-full requests-based python funcaptcha solver using images instead of audio!! (working on this rn!)
+1. full requests-based python funcaptcha solver using images instead of audio!! (working on this rn!)
+2. update this and add google speech to text api.
