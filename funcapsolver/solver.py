@@ -23,17 +23,12 @@ class funcapsolver:
             response = r.recognize_google(audio, language="en")
             return response
 
-    def solvecap(token, proxy=None):
+    def solvecap(token):
         session_token = token.split("|")[0]
-        if proxy == None:
-            getcaptchaAudio = requests.get(
+        getcaptchaAudio = requests.get(
                 f"https://client-api.arkoselabs.com/fc/get_audio/?session_token={session_token}&analytics_tier=40&r=us-east-1&game=1&language=en"
             )
-        else:
-            getcaptchaAudio = requests.get(
-                f"https://client-api.arkoselabs.com/fc/get_audio/?session_token={session_token}&analytics_tier=40&r=us-east-1&game=1&language=en",
-                proxies={"all://": proxy},
-            )
+        
         open(rf"{os.getcwd()}\audios\captcha" + ".wav", "wb+").write(
             getcaptchaAudio.content
         )
