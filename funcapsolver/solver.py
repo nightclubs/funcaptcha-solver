@@ -35,7 +35,6 @@ class funcapsolver:
 
         solve_res = requests.post(
             "https://client-api.arkoselabs.com/fc/audio/",
-            proxies=proxy,
             headers={
                 "authority": "client-api.arkoselabs.com",
                 "accept": "*/*",
