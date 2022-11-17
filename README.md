@@ -15,13 +15,13 @@ at the top of your brand new file. Congrats now you just initiated the solver (r
 
 #### Obtaining an unsolved captcha token
 ```python
-token = funcapsolver.get_token(host='api.funcaptcha.com', pkey='69A21A01-CC7B-B9C6-0F9A-E7FA06677FFC')
+token = funcapsolver.token(host='api.funcaptcha.com', pkey='69A21A01-CC7B-B9C6-0F9A-E7FA06677FFC')
 ```
 
 #### Solving a captcha and returning the captcha response
 ```python
-token = funcapsolver.get_token('api.funcaptcha.com', '69A21A01-CC7B-B9C6-0F9A-E7FA06677FFC')
-solved = funcapsolver.solveCaptcha(token)
+token = funcapsolver.token('api.funcaptcha.com', '69A21A01-CC7B-B9C6-0F9A-E7FA06677FFC')
+solved = funcapsolver.solvecap(token)
 print(solved)
 ``` 
 
